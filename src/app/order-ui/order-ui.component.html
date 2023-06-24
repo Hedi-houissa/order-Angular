@@ -1,0 +1,42 @@
+<div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+        <form (ngSubmit)="submitForm()" class="form-blue-gray">
+          <div class="form-group space">
+            <label for="name">Name:</label>
+            <input type="text" class="form-control" id="name" name="name" [(ngModel)]="formData.name" required>
+            <div *ngIf="nameInvalid && isFormSubmitted" class="error">Name is required and should be a string</div>
+          </div>
+        
+          <div class="form-group space">
+            <label for="lastName">Last Name:</label>
+            <input type="text" class="form-control" id="lastName" name="lastName" [(ngModel)]="formData.lastName" required>
+            <div *ngIf="lastNameInvalid && isFormSubmitted" class="error">Last Name is required and should be a string</div>
+          </div>
+        
+          <div class="form-group space">
+            <label for="typeTeave">Type of Teave:</label>
+            <input type="text" class="form-control" id="typeTeave" name="typeTeave" [(ngModel)]="formData.typeLeave">
+            <div *ngIf="typeLeaveInvalid && isFormSubmitted" class="error">Type of leave is required and should be a string</div>
+
+          </div>
+        
+          <div class="form-group space">
+            <label for="position">Position:</label>
+            <input type="text" class="form-control" id="position" name="position" [(ngModel)]="formData.position">
+            <div *ngIf="positionInvalid && isFormSubmitted" class="error">Position is required and should be a string</div>
+
+          </div>
+        
+          <div class="form-group space">
+            <label for="daysNum">Number of Days:</label>
+            <input type="number" class="form-control" id="daysNum" name="daysNum" [(ngModel)]="formData.daysNum" required>
+            <div *ngIf="daysNumInvalid && isFormSubmitted" class="error">Number of Days is required</div>
+          </div>
+        
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  

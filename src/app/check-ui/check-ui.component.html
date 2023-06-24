@@ -1,0 +1,46 @@
+<div class="container">
+    <div class="row justify-content-center my-3">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Last Name</th>
+                    <th>Days Num</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- 
+                    when get list from database
+                    <tr *ngFor="let order of orders">
+        <td> order.name </td>
+        <td> order.lastName </td>
+        <td> order.daysNum </td>
+        <td>
+          <button class="btn btn-primary mx-1" (click)="acceptOrder(order.id)" [disabled]="order.accepted">Accept</button>
+          <button class="btn btn-danger" (click)="refuseOrder(order.id)" [disabled]="order.refused">Refuse</button>
+        </td>
+      </tr> -->
+      <!-- this is an example  -->
+                <tr>
+                    <td>order.name</td>
+                    <td> order.lastName </td>
+                    <td> order.daysNum </td>
+                    <td>
+                        <button class="btn btn-primary mx-1">Accept</button>
+                        <button class="btn btn-danger">Refuse</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>order.name</td>
+                    <td> order.lastName </td>
+                    <td> order.daysNum </td>
+                    <td>
+                        <button class="btn btn-primary mx-1">Accept</button>
+                        <button class="btn btn-danger">Refuse</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

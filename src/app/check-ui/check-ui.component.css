@@ -1,0 +1,11 @@
+.blue-gray {
+    background-color: rgb(190, 190, 254);
+    color: gray;
+    padding: 20px;
+    border-radius: 5px;
+    margin: 60px;
+
+  }
+  .space{
+    margin: 5px 0;
+  }
